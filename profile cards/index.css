@@ -1,0 +1,36 @@
+*{
+  transition: all .3s ease-in-out;
+}
+body{
+  background: linear-gradient(to right, #d19f48 50%, #fff 50%);
+}
+.cards{
+  width: 22rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.6);
+  cursor: pointer;
+  position: relative;
+}
+.cards img{
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.cards:hover{
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 20px 20px rgba(0,0,0,0.6);
+  transform: translateY(-15px);
+}
+.after_hover{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -111;
+}
+.cards:hover .card-img-top{
+  visibility: hidden;
+  transition: 0.3s;
+}
